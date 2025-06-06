@@ -6,8 +6,6 @@
 }
 html{
 	scroll-behavior: smooth;
-
-	/* Variables For Storing Colors */
 	--primary-base-clr: #D8C4B6;
 	--primary-light-clr: #1e90ff;
 	--bg-clr-1: #C1D0B5;
@@ -28,7 +26,6 @@ body{
 	background-color: var(--bg-clr-2);
 	color: var(--main-heading-clr);
 }
-/*   === Reusable Code Starts ===   */
 .btn{
 	background-color: var(--primary-base-clr);
 	color: var(--main-heading-clr);
@@ -81,9 +78,6 @@ body{
 	margin-bottom: 40px;
 	max-width: 700px;
 }
-/*   === Reusable Code Ends ===   */
-
-/*   === Home Section Styling Starts ===   */
 section.home{
 	position: relative;
 	width: 100%;
@@ -334,9 +328,7 @@ section.home{
 	width: 70px;
 	height: auto;
 }
-/*   === Home Section Styling Ends ===   */
 
-/*   === About Section Styling Starts ===   */
 section.about{
 	padding: 70px 8% 50px;
 	background-color: var(--bg-clr-1);
@@ -465,9 +457,6 @@ section.about{
 	font-size: 15px;
 	color: var(--text-clr);
 }
-/*   === About Section Styling Ends ===   */
-
-/*   === Skills Section Styling Starts ===   */
 section.skills{
 	width: 100%;
 	padding: 50px 8%;
@@ -500,9 +489,6 @@ section.skills{
 	letter-spacing: 1px;
 }
 
-/*   === Skills Section Styling Ends ===   */
-
-/*   === Education Section Styling Starts ===   */
 section.education{
 	width: 100%;
 	padding: 70px 8% 50px;
@@ -557,9 +543,6 @@ section.education{
 	line-height: 1.4;
 	font-size: 18px;
 }
-/*   === Education Section Styling Ends ===   */
-
-/*   === CTA Section Styling Starts ===   */
 section.CTA{
 	width: 100%;
 	padding: 50px 8%;
@@ -584,9 +567,6 @@ section.CTA{
 	padding: 10px 25px;
 	letter-spacing: 2px;
 }
-/*   === CTA Section Styling Ends ===   */
-
-/*   === Experience Section Styling Starts ===   */
 section.experience{
 	width: 100%;
 	padding: 70px 8% 50px;
@@ -598,8 +578,8 @@ section.experience{
     align-items: center;
 }
 .experience-desc h2, .experience-desc p {
-    margin: 0; /* Remove any default margin to avoid extra spacing */
-    line-height: 1.2; /* Adjust the line-height value to your preference */
+    margin: 0;
+    line-height: 1.2; 
     text-align: left; 
 }
 
@@ -656,9 +636,7 @@ section.experience{
 	background-color: transparent;
 	color: var(--main-heading-clr);
 }
-/*   === Experience Section Styling Ends ===   */
 
-/*   === Projects Section Styling Starts ===   */
 section.projects{
 	width: 100%;
 	padding: 70px 8% 50px;
@@ -744,9 +722,6 @@ section.projects{
 .projects-post .post-footer i:nth-child(1){
 	margin-right: 20px;
 }
-/*   === Projects Section Styling Ends ===   */
-
-/*   === Contact Section Styling Starts ===   */
 section.contact{
 	width: 100%;
 	padding: 70px 8% 50px;
@@ -821,9 +796,6 @@ section.contact{
 	resize: none;
 	margin-bottom: 15px;
 }
-/*   === Contact Section Styling Ends ===   */
-
-/*   === Page Footer Styling Starts ===   */
 section.page-footer{
 	width: 100%;
 	padding: 30px 8%;
@@ -836,15 +808,10 @@ section.page-footer{
 	word-spacing: 2px;
 	letter-spacing: 1px;
 }
-/*   === Page Footer Styling Ends ===   */
-
-/*   *** Media Query Starts ***   */
 @media(max-width: 968px){
-	/* Education Section */
 	.education-contents .education-box{
 		flex-basis: 48%;
 	}
-	/* projects Section */
 	.projects .projects-contents{
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -857,7 +824,6 @@ section.page-footer{
 }
 
 @media(max-width: 868px){
-	/* Home Section */
 	.home{
 		margin-bottom: 70px;
 	}
@@ -909,14 +875,12 @@ section.page-footer{
 	.navbar .contact-btn-wrapper{
 		margin-left: auto;
 	}
-	/* experience Section */
 	.experience-contents .experience-box{
 		width: calc(100% / 2);
 	}
 }
 
 @media(max-width: 768px){
-	/* About Section */
 	.about .about-contents{
 		flex-direction: column;
 	}
@@ -927,12 +891,10 @@ section.page-footer{
 	.about-contents .about-experience{
 		flex-basis: 100%;
 	}
-	/* Skills Section */
 	.skills .skills-contents{
 		grid-template-columns: 1fr;
 		grid-gap: 25px 0px;
 	}
-	/* Contact Section */
 	.contact .contact-contents{
 		flex-direction: column;
 	}
@@ -956,7 +918,6 @@ section.page-footer{
 		margin: 0;
 		padding: 0
 	}
-	/* Education Section */
 	.education-contents .education-box{
 		min-width: 100%;
 		box-sizing: border-box;
@@ -971,11 +932,9 @@ section.page-footer{
 	.education-contents .education-box p{
 		color: transparent;
 	}
-	/* experience Section */
 	.experience-contents .experience-box{
 		width: 100%;
 	}
-	/* projects Section */
 	.projects .projects-contents{
 		grid-template-columns: 1fr;
 	}
